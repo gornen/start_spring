@@ -19,11 +19,7 @@
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
+<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,26 +35,26 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+				<dependency>
+		  <groupId>org.jooq</groupId>
+		  <artifactId>jooq</artifactId>
+		  <version>3.2.2</version>
+		</dependency>
 		<dependency>
-			  <groupId>org.jooq</groupId>
-			  <artifactId>jooq</artifactId>
-			  <version>3.2.2</version>
-			</dependency>
-			<dependency>
-			  <groupId>org.jooq</groupId>
-			  <artifactId>jooq-meta</artifactId>
-			  <version>3.2.2</version>
-			</dependency>
-			<dependency>
-			  <groupId>org.jooq</groupId>
-			  <artifactId>jooq-codegen</artifactId>
-			  <version>3.2.2</version>
-			</dependency>
-			<dependency>
-			  <groupId>mysql</groupId>
-			  <artifactId>mysql-connector-java</artifactId>
-			  <version>5.1.28</version>
-			</dependency>
+		  <groupId>org.jooq</groupId>
+		  <artifactId>jooq-meta</artifactId>
+		  <version>3.2.2</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.jooq</groupId>
+		  <artifactId>jooq-codegen</artifactId>
+		  <version>3.2.2</version>
+		</dependency>
+		<dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>5.1.28</version>
+		</dependency>
 	</dependencies>
 
 	<build>

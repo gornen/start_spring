@@ -2,6 +2,7 @@ package com.biblioteca.controller;
 
 import static com.biblioteca.generatedclasses.tables.Perfil.PERFIL;
 
+import java.awt.PageAttributes.MediaType;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,17 +16,17 @@ import org.jooq.impl.DSL;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.biblioteca.model.Perfil;
 
-@Controller
-@RequestMapping("/perfil")
+@RestController
 public class PerfilController {
 	
-	@RequestMapping(value = "/perfil", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET,value = "/perfil")
 	public ArrayList<Perfil> getUsuarios() {
 		
-		ArrayList<Perfil> todosPerfis = null;
+		ArrayList<Perfil> todosPerfis = new ArrayList<Perfil>();
 		Connection conn = null;
 
 		String userName = "root";
